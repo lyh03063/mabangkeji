@@ -1,6 +1,7 @@
 <template>
   <div id="app" style>
-    <m_head class="" ></m_head>
+    <m_head class="" ></m_head>1111
+    <dm_space height="50" ></dm_space>
 
     <m_banner class="" ></m_banner>
     <m_intro class="" ></m_intro>

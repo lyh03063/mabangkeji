@@ -1,16 +1,16 @@
 
 <template>
   <div class>
-    <space height="10"></space>
+    <dm_space height="10"></dm_space>
     <div class>
-      <debug_list>
-        <!-- <debug_item v-model="name" text="姓名"/>
+      <dm_debug_list>
+        <!-- <dm_debug_item v-model="name" text="姓名"/>
         -->
-        <debug_item v-model="memberId" text="当前会员id"></debug_item>
-        <debug_item v-model="myMsgList" text="我的消息列表"></debug_item>
+        <dm_debug_item v-model="memberId" text="当前会员id"></dm_debug_item>
+        <dm_debug_item v-model="myMsgList" text="我的消息列表"></dm_debug_item>
 
-        <!-- <debug_item v-model="objTest.big" text="测试对象属性"></debug_item> -->
-      </debug_list>
+        <!-- <dm_debug_item v-model="objTest.big" text="测试对象属性"></dm_debug_item> -->
+      </dm_debug_list>
     </div>
 
     <el-button plain @click="getMyMsgList" size="mini">获取消息列表</el-button>
@@ -19,7 +19,7 @@
     <div class="n-list-group" v-for="(item,i) in myMsgList" :key="i">
       <div class="FWB">
        {{item.P1}} ： {{item.name}}
-        <ajax_populate
+        <dm_ajax_populate
           :ajax="{'param':{'findJson':{'memberId':memberId,'msgId':item.P1}}}"
           page="tangball_msg_read"
         >
@@ -33,29 +33,24 @@
               >设为已读</a>
             </span>
           </template>
-        </ajax_populate>
+        </dm_ajax_populate>
       </div>
       <div class>{{item.detail}}</div>
     </div>
 
-    <space height="10"></space>
+    <dm_space height="10"></dm_space>
 
-    <!-- <loading height="200"></loading> -->
 
-    <!-- <match_enroll :matchId="matchId"></match_enroll> -->
-    <space height="100"></space>
+    <dm_space height="100"></dm_space>
     <!-- <match_achievement :matchId="matchId"></match_achievement> -->
   </div>
 </template>
 <script>
-import match_achievement from "@/components/bussiness/match_achievement.vue";
-import match_enroll from "@/components/bussiness/match_enroll.vue";
-import ccity_match_achievement_personal from "@/components/bussiness/ccity_match_achievement_personal.vue";
+
 export default {
   components: {
-    match_achievement,
-    match_enroll
-    // ccity_match_achievement_personal
+
+
   },
 
   data() {

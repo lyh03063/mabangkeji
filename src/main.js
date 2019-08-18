@@ -17,16 +17,7 @@ window.moment = moment;
 
 
 
-import space from './components/space/index.js';   //默认情况下找的是index文件
-Vue.use(space);   //必须有install
-import debug_list from './components/common/debug_list/index.js';   //导入debug_list
-Vue.use(debug_list);   //作为全局组件，必须有install
-import debug_item from './components/common/debug_item/index.js';   //导入debug_item
-Vue.use(debug_item);   //作为全局组件，必须有install
-import ajax_populate from './components/common/ajax_populate/index.js';   //导入ajax_populate
-Vue.use(ajax_populate);   //作为全局组件，必须有install
-import loading from './components/common/loading/index.js';   //导入loading
-Vue.use(loading);   //作为全局组件，必须有install
+
 
 
 
@@ -82,7 +73,8 @@ const store = new Vuex.Store({//定义Vuex的存储对象
 Vue.prototype.$store = store//让vue实例中可访问$store
 
 
-
+import dm_components from "dmagic-components";
+Vue.use(dm_components);
 
 import Main from './main.vue'
 new Vue({
