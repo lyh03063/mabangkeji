@@ -1,14 +1,18 @@
 <template>
   <div id="app" style>
-    <m_head class="" ></m_head>1111
-    <dm_space height="50" ></dm_space>
+    <m_head class></m_head>
+    <dm_space height="20"></dm_space>
+    <m_banner class></m_banner>
+    <dm_space height="20"></dm_space>
+    <m_intro class></m_intro>
+    <dm_space height="20"></dm_space>
+    <!-- <m_teacher class></m_teacher> -->
+    <m_course_intro class></m_course_intro>
+    <dm_space height="20"></dm_space>
+    <m_foot class></m_foot>
+    <m_floatbar class></m_floatbar>
 
-    <m_banner class="" ></m_banner>
-    <m_intro class="" ></m_intro>
-    <m_teacher class="" ></m_teacher>
-    <m_course_intro class="" ></m_course_intro>
-    <m_foot class="" ></m_foot>
-
+    <div class="float-bar BC_fff"></div>
   </div>
 </template>
 
@@ -20,44 +24,27 @@ import m_banner from "@/components/index/m_banner";
 import m_intro from "@/components/index/m_intro";
 import m_teacher from "@/components/index/m_teacher";
 import m_course_intro from "@/components/index/m_course_intro";
-
-
-
-
+import m_floatbar from "@/components/index/m_floatbar";
 import m_foot from "@/components/index/m_foot";
 
 export default {
-  components: {m_head,m_banner,m_intro,m_teacher,m_course_intro,m_foot  }, //注册组件
-  methods: {
-   
-  },
-  
+  components: {
+    m_head,
+    m_banner,
+    m_intro,
+    m_teacher,
+    m_course_intro,
+    m_foot,
+    m_floatbar
+  }, //注册组件
+  methods: {},
+
   data() {
     return {
       // 导航菜单列表
-
     };
   },
-  created() {
-    //*引用当前用户名
-    this.currentUserName = localStorage.loginUserName;
-    document.onkeydown = e => {
-      //绑定ctrl+D事件
-      var keyCode = e.keyCode || e.which || e.charCode;
-      var ctrlKey = e.ctrlKey || e.metaKey;
-      if (ctrlKey && keyCode == 68) {
-        console.log("ctrlKey", ctrlKey);
-        console.log("keyCode", keyCode);
-        // this.toggleDebug();//调用：{切换调试模式函数}
-
-        let debug = this.$store.state.debug;
-        console.log("debug", debug);
-        this.$store.commit("setDebug", !debug);
-        e.preventDefault(); //阻止默认事件
-        return false;
-      }
-    };
-  }
+  created() {}
 };
 </script>
 
@@ -69,6 +56,15 @@ body .el-radio-button__orig-radio:checked + .el-radio-button__inner {
   border-color: #e6a23c;
   -webkit-box-shadow: -1px 0 0 0 #e6a23c;
   box-shadow: -1px 0 0 0 #e6a23c;
+}
+
+.width-layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+.big-title {
+  font-size: 44px;
+  line-height: 100px;
 }
 </style>
 

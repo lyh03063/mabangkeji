@@ -4,9 +4,10 @@
       <p class="foot-page-bar"></p>
       <div class="foot-page-inner">
         <div class="foot-page-link-box">
-          <a href="javascript:;" class="foot-page-link">首页</a>
-           <a href="javascript:;" class="foot-page-link">html-API</a>
-           <a href="javascript:;" class="foot-page-link">CSS-API</a>
+          <a href="/" class="foot-page-link">首页</a>
+          <a class="foot-page-link" target="_blank" href="http://www.dmagic.cn/examList">前端考试系统</a>
+           <a target="_blank" href="http://www.dmagic.cn/apiPage/htmlApi" class="foot-page-link">html-API</a>
+           <a target="_blank" href="http://www.dmagic.cn/apiPage/cssApi" class="foot-page-link">CSS-API</a>
         </div>
         <p class="H5 OF2 CL1"></p>
         <div class="foot-page-other-box">
@@ -18,7 +19,7 @@
                 target="_blank"
                 href="http://www.miitbeian.gov.cn/"
                 style="color:#999"
-              >粤ICP备000000号</a>
+              >粤ICP备19090549号</a>
             </span>
             <span class="foot-text">Copyright © 2016–2018</span>
             <span class="foot-text">
