@@ -10,6 +10,7 @@
     <m_course_intro class></m_course_intro>
     <dm_space height="20"></dm_space>
     <list_item></list_item>
+    <dm_space height="20"></dm_space>
     <m_foot class></m_foot>
     <m_floatbar class></m_floatbar>
 

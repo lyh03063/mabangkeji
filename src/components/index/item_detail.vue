@@ -22,8 +22,9 @@
        <el-image 
             v-for="(img,index) in itemMsg.imger"
             :key="index"
-            class="itme-img"
+            :class="img.wide?'item-img-wide':'itme-img'"
             :src="img.url" 
+            @click="changeImgList(index)"
             :preview-src-list="imgList">
       </el-image>
       </el-card>
@@ -40,7 +41,11 @@ export default {
     }
   },
   methods: {
-   
+   changeImgList(index){
+      let img = this.imgList[index]
+      this.imgList[index] = this.imgList[0]
+      this.imgList[0] = img
+   }
   },
   mounted(){
       this.itemMsg.imger.forEach(doc => {
@@ -59,6 +64,12 @@ export default {
 };
 </script>
 <style  scoped>
+    .item-img-wide{
+        width: 280px;
+        height: 180px;
+        margin-left:20px;
+        margin-right:20px;
+    }
     .itme-img{
         width: 120px;
         height: 180px;
@@ -67,15 +78,17 @@ export default {
     }
     .box-card-item{
         float: left;
-        width: 30%;
+        width: 26.5%;
         height: 250px;
         margin: 5px 20px;
+        
     }
     .box-card-img{
         float: left;
         /* width: ; */
         height: 250px;
         margin: 5px 20px;
+        margin-left: 0px;
     }
     .img-title{
         margin-bottom: 10px;
