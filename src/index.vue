@@ -3,12 +3,13 @@
     <m_head class></m_head>
     <dm_space height="20"></dm_space>
     <m_banner class></m_banner>
-    <dm_space height="20"></dm_space>
+    
     <m_intro class></m_intro>
     <dm_space height="20"></dm_space>
     <!-- <m_teacher class></m_teacher> -->
     <m_course_intro class></m_course_intro>
     <dm_space height="20"></dm_space>
+    <list_item></list_item>
     <m_foot class></m_foot>
     <m_floatbar class></m_floatbar>
 
@@ -19,7 +20,7 @@
 <script>
 import Vue from "vue";
 import m_head from "@/components/index/m_head";
-
+import list_item from "@/page/list_item";
 import m_banner from "@/components/index/m_banner";
 import m_intro from "@/components/index/m_intro";
 import m_teacher from "@/components/index/m_teacher";
@@ -35,7 +36,8 @@ export default {
     m_teacher,
     m_course_intro,
     m_foot,
-    m_floatbar
+    m_floatbar,
+    list_item
   }, //注册组件
   methods: {},
 
