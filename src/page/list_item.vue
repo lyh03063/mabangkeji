@@ -3,7 +3,7 @@
   <div class>
     <h1 class="PL20 TAC">学生项目列表</h1>
     <template >
-      <el-tabs v-model="active" @tab-click="switchItem" class="PL20" :stretch="true">
+      <el-tabs v-model="active" @tab-click="switchItem" class="PL20" :stretch="stretch">
         <el-tab-pane :label="item.itemName" :name="index+''" v-for="(item,index) in itemList" :key="index">
           <item_detail :itemMsg="item"></item_detail>
         </el-tab-pane>
@@ -18,6 +18,7 @@ export default {
 
   data() {
     return {
+      stretch:true,
       active:0,
       itemList:[{itemName:"唐球项目",imger:[{url:require('../itemImg/唐球1-1.png')},
         {url:require('../itemImg/唐球1-2.png')},
@@ -49,11 +50,15 @@ export default {
   methods: {
     switchItem(){
       console.log(this.active);
-      
+    }
+  },
+  mounted(){
+    if (window.screen.width<768) {
+      this.stretch = false;
     }
   }
 };
 </script>
 <style scoped>
-
+  
 </style>

@@ -19,26 +19,16 @@
 </template>
 
 <script>
-import Vue from "vue";
-import m_head from "@/components/index/m_head";
-import list_item from "@/page/list_item";
-import m_banner from "@/components/index/m_banner";
-import m_intro from "@/components/index/m_intro";
-import m_teacher from "@/components/index/m_teacher";
-import m_course_intro from "@/components/index/m_course_intro";
-import m_floatbar from "@/components/index/m_floatbar";
-import m_foot from "@/components/index/m_foot";
-
 export default {
   components: {
-    m_head,
-    m_banner,
-    m_intro,
-    m_teacher,
-    m_course_intro,
-    m_foot,
-    m_floatbar,
-    list_item
+    m_head: () => import('@/components/index/m_head'),
+    m_banner: () => import('@/components/index/m_banner'),
+    m_intro: () => import('@/components/index/m_intro'),
+    m_teacher: () => import('@/components/index/m_teacher'),
+    m_course_intro: () => import('@/components/index/m_course_intro'),
+    m_foot: () => import('@/components/index/m_foot'),
+    m_floatbar: () => import('@/components/index/m_floatbar'),
+    list_item: () => import('@/page/list_item')
   }, //注册组件
   methods: {},
 

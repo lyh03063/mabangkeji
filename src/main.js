@@ -4,16 +4,16 @@ window.PUB = {}
 window.PUB.domain = "http://120.76.160.41:3000"
 //window.PUB.domain="http://localhost:3000"
 
-import Vue from 'vue'
+// import Vue from 'vue'
 Vue.config.productionTip = false
 
 import lodash from 'lodash'//导入lodash方法库
 window.lodash = lodash
-import axios from "axios";
+// import axios from "axios";
 window.axios = axios;
 
-import moment from "moment";
-window.moment = moment;
+// import moment from "moment";
+// window.moment = moment;
 
 
 
@@ -21,8 +21,8 @@ window.moment = moment;
 
 
 
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+// import VueRouter from 'vue-router'
+// Vue.use(VueRouter)
 import "./mock.js";
 import "@/assets/js/mix.js";//注意位置要提前
 import index from "@/index";
@@ -45,15 +45,12 @@ const router = new VueRouter({
 
 
 
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-
-Vue.use(ElementUI);
 
 
 
-import Vuex from 'vuex'//导入vuex模块
-Vue.use(Vuex)//应用组件
+
+//import Vuex from 'vuex'//导入vuex模块
+//Vue.use(Vuex)//应用组件
 
 const store = new Vuex.Store({//定义Vuex的存储对象
   state: {

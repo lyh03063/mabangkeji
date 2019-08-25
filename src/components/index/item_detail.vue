@@ -65,13 +65,13 @@ export default {
 </script>
 <style  scoped>
     .item-img-wide{
-        width: 280px;
+        width: 26%;
         height: 180px;
         margin-left:20px;
         margin-right:20px;
     }
     .itme-img{
-        width: 120px;
+        width: 13%;
         height: 180px;
         margin-left:20px;
         margin-right:20px;
@@ -85,7 +85,7 @@ export default {
     }
     .box-card-img{
         float: left;
-        /* width: ; */
+        width: 65%;
         height: 250px;
         margin: 5px 20px;
         margin-left: 0px;
@@ -102,6 +102,12 @@ export default {
         line-height:30px;
     }
     @media screen and (max-width:768px){
+        .itme-img{
+            width: 40%
+        }
+        .item-img-wide{
+            width: 90%
+        }
         .box-card-item{
             width: 90%;
             height: 100%;
