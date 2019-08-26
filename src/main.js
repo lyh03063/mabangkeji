@@ -23,14 +23,14 @@ window.axios = axios;
 
 // import VueRouter from 'vue-router'
 // Vue.use(VueRouter)
-import "./mock.js";
-import "@/assets/js/mix.js";//注意位置要提前
+// import "./mock.js";
+// import "@/assets/js/mix.js";//注意位置要提前
 import index from "@/index";
 
 
 
-import util from "@/assets/js/util.js";//注意位置要提前
-window.util = util;
+// import util from "@/assets/js/util.js";//注意位置要提前
+// window.util = util;
 
 // 3. 创建 router 实例，然后传 `routes` 配置
 const router = new VueRouter({
@@ -70,8 +70,8 @@ const store = new Vuex.Store({//定义Vuex的存储对象
 Vue.prototype.$store = store//让vue实例中可访问$store
 
 
-import dm_components from "dmagic-components";
-Vue.use(dm_components);
+// import dm_components from "dmagic-components";
+// Vue.use(dm_components);
 
 import Main from './main.vue'
 new Vue({

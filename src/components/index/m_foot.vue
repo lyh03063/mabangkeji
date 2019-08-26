@@ -11,7 +11,7 @@
         </div>
         <p class="H5 OF2 CL1"></p>
         <div class="foot-page-other-box">
-          <span class="foot-text B">公司电话：0755-28223854 15820292152</span>
+          <span class="foot-text B">公司电话：0755-28223854 19864865950</span>
           <span class="foot-text">地址：深圳市龙岗区平湖街道茗萃园3期商铺</span>
           <div class="LH_20">
             <span class="foot-text">
