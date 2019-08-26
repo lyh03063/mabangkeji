@@ -35,10 +35,13 @@ export default {
   methods: {
     // 页面滚动触发的方法，判断滚动条是否在底部,是触发事件
     scrollToTop(){
-      //console.log('aaaa',document.documentElement.scrollTop);//滚动条位置
-      //console.log('aaaa',document.documentElement.clientHeight);//可视内容高度
-      //console.log('aaaa',document.documentElement.scrollHeight);//元素总高度
-      if (document.documentElement.scrollTop+document.documentElement.clientHeight+10>document.documentElement.scrollHeight) {
+      let top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset
+      // console.log('aaaa',top);//滚动条位置
+      // console.log('aaaa',document.documentElement.clientHeight);//可视内容高度
+      // console.log('aaaa',document.documentElement.scrollHeight);//元素总高度
+      // console.log(document.documentElement.scrollTop+document.documentElement.clientHeight+100>document.documentElement.scrollHeight);
+      
+      if (top+document.documentElement.clientHeight+30>document.documentElement.scrollHeight) {
        this.showPage()
       }
     },
@@ -53,7 +56,7 @@ export default {
     }
   },
   mounted(){
-    // 页面天剑滚动事件
+    // 页面添加滚动事件
     window.addEventListener('scroll',this.scrollToTop)
     // console.log('aaaa',document.documentElement.clientHeight); //可视内容高度
     // 判断页面初始化时是否有滚动条
