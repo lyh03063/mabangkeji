@@ -34,18 +34,18 @@
       </el-menu-item>-->
     </el-menu>
     <div v-if="movePage" class="movePage-box">
-      <div class="FL FS24 movePage-text">码帮科技-前端培训</div>
+      <div class="FL movePage-text">码帮科技-前端培训</div>
       <div class="menu" v-if="showmenu" @click="showmenu=false"></div>
       <div class="close" v-if="!showmenu" @click="showmenu=true"></div>
       <div style="clear:both"></div>
       <div v-if="!showmenu">
-        <div class="movePage-text FS20 menu-box">首页</div>
-        <div class="movePage-text FS20 menu-box">
+        <div class="movePage-text  menu-box">首页</div>
+        <div class="movePage-text  menu-box">
           <a style="color:white" target="_blank" href="http://www.dmagic.cn/examList">前端考试系统</a>
         </div>
-        <div class="movePage-text FS20 menu-box">
+        <div class="movePage-text menu-box">
           <el-dropdown size="medium">
-            <span class="movePage-text FS20 menu-box">
+            <span style="font-size:18px; color:white">
               在线教学资源
               <i class="el-icon-arrow-down el-icon--right"></i>
             </span>
@@ -99,27 +99,26 @@ export default {
 }
 .menu {
   float: right;
-  /* margin-right: 2px; */
+  margin-right: 5px;
   background-image: url("./菜单.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 40px;
-  height: 40px;
-  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
 }
 .close {
   float: right;
-  margin-right: 5px;
-  margin-top: 13px;
-  margin-right: -5px;
+  margin-right: 0px;
+  margin-top: 16px;
   background-image: url("./关闭.png");
   background-size: 60%;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .movePage-box {
-  padding-left: 20px;
+  padding-left: 10px;
   background-color: black;
   width: 100%;
   /* height: 50px; */
@@ -127,10 +126,12 @@ export default {
 }
 .movePage-text {
   color: white;
+  font-size: 20px;
 }
 .menu-box {
   border-top: 1px solid gray;
   margin-right: 5px;
+  font-size: 18px;
 }
 @media screen and (max-width: 768px) {
 }
