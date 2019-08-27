@@ -2,7 +2,6 @@
   <div id="app" style>
     <m_head class></m_head>
     <m_banner class ></m_banner>
-    
     <m_intro class ></m_intro>
     <dm_space height="20" ></dm_space>
     <!-- <m_teacher class></m_teacher> -->
@@ -12,7 +11,6 @@
     <dm_space height="20" v-if="showPageList.showListItem"></dm_space>
     <m_foot class v-if="showPageList.showFoot"></m_foot>
     <m_floatbar class v-if="showPageList.showFoot"></m_floatbar>
-
     <div class="float-bar BC_fff" v-if="showPageList.showFoot"></div>
   </div>
 </template>
