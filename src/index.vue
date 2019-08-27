@@ -1,7 +1,6 @@
 <template>
   <div id="app" style>
     <m_head class></m_head>
-    <dm_space height="20"></dm_space>
     <m_banner class ></m_banner>
     
     <m_intro class ></m_intro>
