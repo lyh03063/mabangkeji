@@ -17,7 +17,7 @@
             <span class="foot-text">
               <a
                 target="_blank"
-                href="http://www.miitbeian.gov.cn/"
+                href="http://www.beian.miit.gov.cn/"
                 style="color:#999"
               >粤ICP备19090549号</a>
             </span>

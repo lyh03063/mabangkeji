@@ -9,7 +9,8 @@
     <dm_space height="20" v-if="showPageList.showCourseIntro"></dm_space>
     <list_item ref="list_item" v-if="showPageList.showListItem"></list_item>
     <dm_space height="20" v-if="showPageList.showListItem"></dm_space>
-    <m_foot class v-if="showPageList.showFoot"></m_foot>
+    <!-- v-if="showPageList.showFoot" -->
+    <m_foot class ></m_foot>
     <m_floatbar class v-if="showPageList.showFoot"></m_floatbar>
     <div class="float-bar BC_fff" v-if="showPageList.showFoot"></div>
   </div>

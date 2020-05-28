@@ -26,7 +26,7 @@ export default {
       showMovePage:false,
       bannerHeight:'170px',
       arrImg: [
-      { url: "http://pwff5uqxs.bkt.clouddn.com/mabang_baner2.jpg" },
+      { url: "http://qn-dmagic.dmagic.cn/mabang_baner2.jpg" },
         { url: "http://www.mobiletrain.org/page/img/html5/banner_pic1.jpg" }]
       
     };
